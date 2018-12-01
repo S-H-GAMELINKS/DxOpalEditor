@@ -7,6 +7,11 @@
     "vue-loader": "14.2.2",
     "vue-template-compiler": "^2.5.17"
   },
+  "jest": {
+    "roots": [
+      "test/javascript"
+    ]
+  },
   "devDependencies": {
     "jest": "^23.6.0",
     "webpack-dev-server": "2.11.2"
