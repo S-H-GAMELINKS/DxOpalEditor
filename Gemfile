@@ -60,6 +60,8 @@ group :test do
   # Using better_errors & binding_of_caller
   gem "better_errors"
   gem "binding_of_caller"
+  # Using sextant
+  gem 'sextant'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
