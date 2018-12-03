@@ -64,6 +64,8 @@ group :test do
   gem 'sextant'
   # Using pry-rails
   gem 'pry-rails'
+  # Using bullet
+  gem 'bullet'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
