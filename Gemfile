@@ -52,14 +52,6 @@ group :development do
   gem 'brakeman'
   # Using bundler-audit
   gem 'bundler-audit'
-end
-
-group :test do
-  # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '>= 2.15'
-  gem 'selenium-webdriver'
-  # Easy installation and use of chromedriver to run system tests with Chrome
-  gem 'chromedriver-helper'
   # Using better_errors & binding_of_caller
   gem "better_errors"
   gem "binding_of_caller"
@@ -71,6 +63,12 @@ group :test do
   gem 'bullet'
   # Using license_finder
   gem 'license_finder'
+end
+
+group :test do
+  # Adds support for Capybara system testing and selenium driver
+  gem 'capybara', '>= 2.15'
+  gem 'selenium-webdriver'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
