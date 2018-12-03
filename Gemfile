@@ -62,6 +62,8 @@ group :test do
   gem "binding_of_caller"
   # Using sextant
   gem 'sextant'
+  # Using pry-rails
+  gem 'pry-rails'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
