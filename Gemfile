@@ -66,6 +66,8 @@ group :test do
   gem 'pry-rails'
   # Using bullet
   gem 'bullet'
+  # Using license_finder
+  gem 'license_finder'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
