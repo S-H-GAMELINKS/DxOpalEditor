@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+
+  root "web#index"
+
+  get "web/index", to: "web#index"
+
+  get "/sources", to: "web#index"
+  get "/sources/:id", to: "web#index"
+  get "/sources/:id/edit", to: "web#index"
+  get "/sources/new", to: "web#index"
+
   namespace :api, format: 'json' do
     resources :sources
   end
