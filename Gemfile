@@ -31,6 +31,10 @@ gem 'jbuilder', '~> 2.5'
 # Using foreman
 gem 'foreman'
 
+# Using DxOpal
+gem 'dxopal'
+gem 'thor', '>= 0.19.1'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 

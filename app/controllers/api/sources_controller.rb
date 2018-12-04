@@ -1,11 +1,15 @@
 class Api::SourcesController < ApplicationController
-    before_action :set_source, only: [:show, :edit, :hashtags, :update, :destroy]
+    before_action :set_source, only: [:code, :show, :edit, :hashtags, :update, :destroy]
 
     # GET /api/sources
     # GET /api/sources.json
     def index
       @sources = Source.all
       render json: @sources
+    end
+
+    def code
+      render json: @source.code
     end
 
     # GET /api/sources/1
