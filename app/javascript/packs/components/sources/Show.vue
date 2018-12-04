@@ -7,7 +7,8 @@
 
         <h2><p> Game </p></h2>
         <script type="text/ruby">
-            DXOpal.dump_error{ require_remote 'main' }
+            require 'native'
+            DXOpal.dump_error{ require_remote "/api/" + String($$.location.pathname) + "/code" }
         </script>
 
         <canvas id="dxopal-canvas"></canvas>

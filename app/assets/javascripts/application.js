@@ -12,5 +12,6 @@
 //
 //= require rails-ujs
 //= require activestorage
+//= require dxopal.min
 //= require turbolinks
 //= require_tree .
