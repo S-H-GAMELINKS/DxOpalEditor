@@ -28,7 +28,7 @@ export default {
             axios.defaults.headers['X-CSRF-TOKEN'] = $('meta[name=csrf-token]').attr('content');
             axios.defaults.headers['content-type'] = 'application/json';
 
-            axios.post('/api/sources').then((response) => {
+            axios.get('/api/sources').then((response) => {
                 for(var i = 0; i < response.data.length; i++) {
                     this.sources.push(response.data[i]);
                 }
