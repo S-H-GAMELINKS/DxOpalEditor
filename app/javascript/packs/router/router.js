@@ -11,9 +11,6 @@ Vue.use(VueRouter)
 export default new VueRouter({
     mode: 'history',
     routes: [
-        { path: '/', component: Index },
-        { path: '/about', component: About },
-        { path: '/contact', component: Contact },
         { path: '/sources', component: SourceIndex },
         { path: '/sources/new', component: SourceCreate },
         { path: '/sources/:id', component: SourceShow, name: 'sources_show'},
