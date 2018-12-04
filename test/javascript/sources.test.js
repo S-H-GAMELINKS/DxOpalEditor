@@ -12,7 +12,15 @@ describe('Sources CRUD test', () => {
     });
 
     it('should render Show', () => {
-        const wrapper = shallowMount(Show);
+        const $route = {
+            path: '/sources/1'
+        }
+
+        const wrapper = shallowMount(Show, {
+            mocks: {
+              $route
+            }
+        });
         expect(wrapper).not.toBeNull();
     });
 
